@@ -23,6 +23,8 @@ jobs:
                   - image: cimg/base:2021.04
                 steps:
                   - run: echo dynamic config
+                  - browser-tools/install-chrome
+                  - browser-tools/install-chromedriver
             workflows:
              workflow1:
               jobs:
