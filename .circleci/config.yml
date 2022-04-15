@@ -32,3 +32,7 @@ jobs:
             EOF
       - continuation/continue:
           configuration_path: main.yml
+workflows:
+  setup:
+    jobs:
+      - setup
