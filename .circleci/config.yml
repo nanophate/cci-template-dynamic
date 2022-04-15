@@ -13,10 +13,10 @@ jobs:
       - run:
           name: Generate config
           command: |
-            cat > main.yml \<<- EOF
+            cat > main.yml << EOF
             version: 2.1
             orbs:
-              browser-tools: circleci/browser-tools@${BROWSER_TOOLS_VER}
+              browser-tools: circleci/browser-tools@$BROWSER_TOOLS_VER
             jobs:
               job1:
                 docker:
