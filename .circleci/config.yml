@@ -10,7 +10,7 @@ jobs:
     executor: continuation/default
     steps:
       - checkout
-      - run: sleep 4m
+      - run: sleep 5m
       - run:
           name: Generate config
           command: |
