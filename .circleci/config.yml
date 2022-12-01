@@ -24,8 +24,8 @@ jobs:
                 steps:
                   - run: echo dynamic configy
                   - browser-tools/install-chrome:
-                        firefox-version: 63.0.3
-                        geckodriver-version: "v0.23.0"
+                      firefox-version: 63.0.3
+                      geckodriver-version: "v0.23.0"
                   - browser-tools/install-chromedriver
             workflows:
              workflow1:
