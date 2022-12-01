@@ -22,7 +22,7 @@ jobs:
                 docker:
                   - image: cimg/base:2021.04
                 steps:
-                  - run: echo dynamic config
+                  - run: echo dynamic configy
                   - browser-tools/install-chrome
                   - browser-tools/install-chromedriver
             workflows:
