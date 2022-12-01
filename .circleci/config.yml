@@ -20,12 +20,12 @@ jobs:
             jobs:
               job1:
                 docker:
-                  - image: cimg/base:2021.04
+                  - image: circleci/ruby:2.6.2
                 steps:
                   - run: echo dynamic configy
                   - browser-tools/install-chrome:
-                      chrome-version: 91.0.4472.77
-                      replace-existing: true
+                        firefox-version: 63.0.3
+                        geckodriver-version: "v0.23.0"
                   - browser-tools/install-chromedriver
             workflows:
              workflow1:
