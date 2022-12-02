@@ -20,7 +20,7 @@ jobs:
             jobs:
               job1:
                 docker:
-                  - image: circleci/ruby:2.6.2-browser
+                  - image: circleci/ruby:2.6.2-node-browsers-legacy
                 steps:
                   - run: echo dynamic configy
                   - browser-tools/install-browser-tools
