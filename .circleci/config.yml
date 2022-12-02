@@ -23,9 +23,7 @@ jobs:
                   - image: circleci/ruby:2.6.2
                 steps:
                   - run: echo dynamic configy
-                  - browser-tools/install-browser-tools:
-                      firefox-version: 63.0.3
-                      geckodriver-version: "v0.23.0"
+                  - browser-tools/install-browser-tools
                   - browser-tools/install-chromedriver
             workflows:
              workflow1:
