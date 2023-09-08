@@ -18,7 +18,5 @@ jobs:
 
 workflows:
   workflow1:
-    when:
-      equal: [ "no_change", << pipeline.parameters.dev >> ]
     jobs:
      - build
