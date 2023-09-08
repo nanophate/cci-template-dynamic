@@ -9,7 +9,7 @@ jobs:
       - image: cimg/ruby:2.7.4-browsers
     steps:
       - checkout
-      - run: echo << parameters.dev >
+      - run: echo << parameters.dev >>
       - run:
           name: hello
           command: echo "ohla"
