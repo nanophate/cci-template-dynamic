@@ -10,30 +10,6 @@ jobs:
     executor: continuation/default
     steps:
       - checkout
-      - run:
-          name: Generate config
-          command: |
-            cat > main.yml \<<- EOF
-            version: 2.1
-            orbs:
-              browser-tools: circleci/browser-tools@$BROWSER_TOOLS_VER
-            jobs:
-              parameters:
-                dev:
-                  type: string
-                  default: "no_change"
-              job1:
-                docker:
-                  - image: cimg/ruby:2.6.2
-                steps:
-                  - run: echo << parameters.dev >>
-                  - browser-tools/install-browser-tools
-                  - browser-tools/install-chromedriver
-            workflows:
-             workflow1:
-              jobs:
-               - job1
-            EOF
       - continuation/continue:
           configuration_path: main.yml
 workflows:
