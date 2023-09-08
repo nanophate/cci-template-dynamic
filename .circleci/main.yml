@@ -1,10 +1,10 @@
 version: 2.1
 jobs:
-  parameters:
-    dev:
-      type: string
-      default: "no_change"
   build:
+    parameters:
+      dev:
+        type: string
+        default: "no_change"
     docker:
       - image: cimg/ruby:2.7.4-browsers
     steps:
