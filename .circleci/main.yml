@@ -15,3 +15,7 @@ jobs:
       - run:
           name: hello
           command: echo "ohla"
+workflows:
+  workflow1:
+    jobs:
+     - build
