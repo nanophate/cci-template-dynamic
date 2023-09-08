@@ -11,7 +11,7 @@ jobs:
     steps:
       - checkout
       - continuation/continue:
-          configuration_path: main.yml
+          configuration_path: .circleci/main.yml
 workflows:
   setup:
     jobs:
