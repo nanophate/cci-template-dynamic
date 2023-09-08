@@ -18,11 +18,15 @@ jobs:
             orbs:
               browser-tools: circleci/browser-tools@$BROWSER_TOOLS_VER
             jobs:
+              parameters:
+                dev:
+                  type: string
+                  default: "no_change"
               job1:
                 docker:
                   - image: cimg/ruby:2.6.2
                 steps:
-                  - run: echo dynamic configy
+                  - run: echo << parameters.dev >
                   - browser-tools/install-browser-tools
                   - browser-tools/install-chromedriver
             workflows:
