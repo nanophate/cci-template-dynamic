@@ -2,11 +2,6 @@ version: 2.1
 
 setup: true
 
-parameters:
-  dev:
-    type: string
-    default: "no_change"
-
 orbs:
   continuation: circleci/continuation@0.2.0
 
